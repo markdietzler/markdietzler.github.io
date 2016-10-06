@@ -1,0 +1,9 @@
+body {
+    background: url("../img/bg.png");
+}
+p {
+    font-family: serif;
+}
+img {
+    width: 50%;
+}
