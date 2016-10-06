@@ -1,3 +1,10 @@
+/* property modifications */
+a {text-decoration: none}
+a:link {color: #A95322; text-decoration: none;}
+a:visited {color: #A95322; text-decoration: none;}
+a:hover {color: #A95322; text-decoration: underline overline}
+a:active {color: #A95322; text-decoration: none;}
+/* element behavior */
 body {
     background: url("../img/bg.png");
 }
