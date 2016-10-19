@@ -14,3 +14,19 @@ p {
 img {
     width: 50%;
 }
+.button {
+    /* basic button styling */
+    display: block;
+    height: 1.5em;
+    width: 3em;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+    /* text styling */
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+a.button {
+    text-decoration: none;
+}
