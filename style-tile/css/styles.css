@@ -1,0 +1,60 @@
+/***************/
+/* YOUR STYLES */
+/***************/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Color Palette */
+.color-1 {
+    background: red;
+}
+.color-2 {
+    background: blue;
+}
+.color-3 {
+    background: white;
+}
+.color-4 {
+    background: tan;
+}
+.color-5 {
+    background: brown;
+}
+
+/* Textures or Patterns*/
+.pattern-1 {
+    background: url("../img/grid-bg.png");
+}
+.pattern-2 {
+    background: url(../img/grid-bg.png);
+}
+.pattern-3 {
+    background: url(../img/grid-bg.png);
+}
+
+/* Imagery */
+.imagery-1 {
+    /*  */
+}
+
+/* Icons */
+
+
+/* Navigation */
+a:link,
+a:visited {
+    color: tan;
+    text-transform: uppercase;
+}
+a:hover {
+    background: brown;
+    margin-left: 10px;
+}
+a:active {
+    color: white;
+    background: blue;
+}
+
+/* Typography */
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
