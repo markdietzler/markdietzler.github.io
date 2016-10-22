@@ -1,60 +1,124 @@
+/* pixel to em chart */
+/* 1px = 0.0625em  | 2px = 0.125em  */
+/* 3px = 0.1875em  | 4px = 0.25em   */
+/* 5px = 0.3125em  | 6px = 0.375em  */
+/* 7px = 0.4375em  | 8px = 0.5em    */
+/* 9px = 0.5625em  | 10px = 0.625em */
+/* 11px = 0.6875em | 12px = 0.75em  */
+/* 13px = 0.8125em | 14px = 0.875em */
+/* 15px = 0.9375em | 16px = 1em     */
+
 /***************/
 /* YOUR STYLES */
 /***************/
+
+/* font imports */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 /* Color Palette */
 .color-1 {
-    background: red;
+    background: #ddE2A7;
 }
 .color-2 {
-    background: blue;
+    background: #B5E0A3;
 }
 .color-3 {
-    background: white;
+    background: #A4D788;
 }
 .color-4 {
-    background: tan;
+    background: #95CB62;
 }
 .color-5 {
-    background: brown;
+    background: #77CB62;
 }
 
 /* Textures or Patterns*/
+
 .pattern-1 {
-    background: url("../img/grid-bg.png");
+    background: url("../img/brushed_tile_bkgrnd.png");
 }
 .pattern-2 {
-    background: url(../img/grid-bg.png);
+    background: url(../img/egg_shell_tile_bkgrnd.png);
 }
 .pattern-3 {
-    background: url(../img/grid-bg.png);
+    background: url(../img/roughcloth_tile_bkgrnd.png);
+}
+.pattern-4 {
+    background: url(../img/sandpaper_tile_bkgrnd.png);
+}
+.pattern-5 {
+    background: url(../img/bg.png);
 }
 
 /* Imagery */
+
 .imagery-1 {
-    /*  */
+    /* do stuff here*/
 }
 
 /* Icons */
 
+.icon-1 {
+    /* do stuff here */
+}
 
 /* Navigation */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    /* do stuff */
+    background-color: white;
+    border: 0.125px solid #77CB62;
+    color: black;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*font-size: 1em;*/
+    margin: .25em 0.125em;
+    -webkit-transition-duration: 0.5s; /* safari compatibility */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #77CB62;
+    background-color: #77CB62;
+    color: white;
+}
+
+/* psudoclass link behavior*/
 a:link,
 a:visited {
-    color: tan;
+    color: #A95322;
     text-transform: uppercase;
 }
 a:hover {
-    background: brown;
-    margin-left: 10px;
+    margin-left: 0.125em;
+    text-decoration: underline overline;
 }
 a:active {
     color: white;
-    background: blue;
+    background: #A95322;
 }
 
 /* Typography */
 
+h1 {
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
+}
+
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
 }
