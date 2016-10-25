@@ -35,7 +35,7 @@
 /* Textures or Patterns*/
 
 .pattern-1 {
-    background: url("../img/brushed_tile_bkgrnd.png");
+    background: url(../img/brushed_tile_bkgrnd.png);
 }
 .pattern-2 {
     background: url(../img/egg_shell_tile_bkgrnd.png);
@@ -69,16 +69,15 @@ a {
 }
 
 button {
-    /* do stuff */
     background-color: white;
-    border: 0.125px solid #77CB62;
+    border: 0.125em solid #77CB62;
     color: black;
     padding: 1em 2em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     /*font-size: 1em;*/
-    margin: .25em 0.125em;
+    margin: 0.25em 0.125em;
     -webkit-transition-duration: 0.5s; /* safari compatibility */
     transition-duration: 0.5s;
     cursor: pointer;
@@ -108,7 +107,7 @@ a:active {
 /* Typography */
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }/* primary header */
 
 h2 {
