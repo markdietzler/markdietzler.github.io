@@ -1,19 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  <meta charset "utf-8">
-  <title>Home Page</title>
-      <link rel="stylesheet" href="/css/styles.css"/>
-  </head>
-  <body>
-  <h1>Mark Dietzler</h1>
-      <!-- unordered list -->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
-  </ul>
-  <img src="img/me.jpg" alt="My Mug">
-  </body>
+<head>
+<meta charset "utf-8">
+<title>Home Page of Mark Dietzler</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body class="default_padding">
+    <header>
+       <h1>Mark Dietzler</h1>
+    </header>
+    <nav>
+        <!--<button onclick="location.href='index.html'" class="default_border">Home</button>-->
+        <button onclick="location.href='about.html'" class="default_border">About Me</button>
+        <button onclick="location.href='portfolio.html'" class="default_border">My Portfolio</button>
+        <button onclick="location.href='contact.html'" class="default_border">Contact Me</button>
+    </nav>
+    <main class="default_border">
+        <section class="default_border">
+            <article>
+                <h2>Cool Stuff</h2>
+                <p>Text after text after text.</p>
+            </article>
+            <article>
+                <h3>More Cool Stuff</h3>
+                <p>Text after text after text.</p>
+            </article>
+        </section>
+    </main>
+    <aside class="default_border">
+       <article>
+          <h2>Aside Text</h2>
+          <p>Served for 20 years in the Navy, now in college to change careers.</p>
+       </article>
+    </aside>
+    <footer class="default_border">
+        <p>Design and Content &copy; Mark Dietzler | 2016</p>
+    </footer>
+</body>
 </html>
