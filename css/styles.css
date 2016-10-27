@@ -44,6 +44,10 @@ p {
     font-family: 'Titillium Web', sans-serif;
 }
 
+li {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 img {
     width: 50%;
 }
@@ -99,6 +103,7 @@ aside {
     width: 21em;
     float: right;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     padding: 0.5em;
 }
 
@@ -131,6 +136,11 @@ footer {
 
 .default_border {
     border-radius: 0.5em;
+}
+
+.education_list_Item_format {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.875em;
 }
 
 /* id elements start here */
