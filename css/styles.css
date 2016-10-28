@@ -44,8 +44,20 @@ p {
     font-family: 'Titillium Web', sans-serif;
 }
 
+ul {
+    margin: 1.3em;
+    padding: 0;
+}
+
 li {
     font-family: 'Titillium Web', sans-serif;
+    list-style: none;
+    background: url(../img/iconmonstr-arrow-16px.png) no-repeat left center;
+    padding-left: 1.75em;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    border-radius: 0.25em;
+    border: dashed 1px green;
 }
 
 img {
@@ -127,6 +139,74 @@ footer {
     padding-bottom: 0.0125em;
 }
 
+/* email submission form formatting */
+form {
+    border-radius: 0.25em;
+}
+
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .9em;
+}
+
+label,
+input {
+  border-radius: 0.25em;
+  border: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #ddE2A7;
+    border: 0.125em solid #77CB62;
+    box-shadow: 0.25em 0.25em 0.5em black;
+    color: black;
+    padding: 0.0125em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25em;
+    font-family: 'Exo', sans-serif;
+    margin: .25em 0.125em;
+    -webkit-transition-duration: 0.3s; /* safari compatibility */
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border-color: #77CB62;
+    background-color: #77CB62;
+    color: white;
+}
+
+textarea {
+    width: 40em;
+    height: 4em;
+    margin-bottom: 1.5em;
+}
+
+label {
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+input,
+textarea {
+  text-align: left;
+  background: white;
+}
+
+textarea {
+  border: none;
+}
+
+/* end form format area */
+
 /* class elements start here */
 
 .default_padding {
@@ -141,6 +221,26 @@ footer {
 .education_list_Item_format {
     font-family: 'Titillium Web', sans-serif;
     font-size: 0.875em;
+}
+
+.linkedin_list_item {
+    background: url(../img/iconmonstr-linkedin-3-24.png) no-repeat left center;
+    padding-left: 1.75em;
+}
+
+.email_list_item {
+    background: url(../img/iconmonstr-email-2-24.png) no-repeat left center;
+    padding-left: 1.75em;
+}
+
+.github_list_item {
+    background: url(../img/iconmonstr-github-5-24.png) no-repeat left center;
+    padding-left: 1.75em;
+}
+
+.cell_list_item {
+    background: url(../img/iconmonstr-smartphone-4-24.png) no-repeat left center;
+    padding-left: 1.75em;
 }
 
 /* id elements start here */
