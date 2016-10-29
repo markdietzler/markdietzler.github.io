@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.75em;
 }
 
 h3 {
@@ -216,6 +216,12 @@ textarea {
 
 .default_border {
     border-radius: 0.5em;
+}
+
+.glory_shot_styling {
+    border-radius: 0.5em;
+    float: right;
+    margin-bottom: 2em;
 }
 
 .education_list_Item_format {
