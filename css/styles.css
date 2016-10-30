@@ -8,7 +8,7 @@
 /* 13px = 0.8125em | 14px = 0.875em */
 /* 15px = 0.9375em | 16px = 1em     */
 
-@import url('https://fonts.googleapis.com/css?family=Exo|Oxygen:700|Poppins:500|Titillium+Web:400');
+@import url('https://fonts.googleapis.com/css?family=Exo:800|Expletus+Sans:700|Poppins:500|Titillium+Web');
 
 /* pseudoclass link behavior */
 a {text-decoration: none}
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Expletus Sans', sans-serif;
     font-size: 3em;
 }
 
@@ -38,6 +38,7 @@ h2 {
 
 h3 {
     font-family: 'Exo', sans-serif;
+    font-size: 1em;
 }
 
 p {
