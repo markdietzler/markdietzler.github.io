@@ -62,7 +62,7 @@ li {
 }
 
 img {
-    width: 50%;
+    width: 100%;
 }
 
 button {
@@ -221,13 +221,11 @@ textarea {
 
 .glory_shot_styling {
     border-radius: 0.5em;
-    float: right;
-    margin-bottom: 2em;
+    margin-bottom: 0.25em;
 }
 
 .education_list_Item_format {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 0.875em;
 }
 
 .linkedin_list_item {
