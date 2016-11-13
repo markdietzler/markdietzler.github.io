@@ -20,10 +20,19 @@ a:active {color: #A95322; text-decoration: none;}
 /* element behavior */
 
 body {
-    width: 65em;
     background-color: green;
-    margin-left: 1em;
-    margin-right: auto;
+}
+
+main {
+    width: 90%;
+    background-color: #77CB62;
+    margin: 0 auto;
+    margin-top: 01.5em;
+    margin-bottom: 0.5em;
+    padding: 1%;
+    position: relative;
+    height: 156em ;
+
 }
 
 h1 {
@@ -66,7 +75,7 @@ img {
 }
 
 button {
-    /* do stuff */
+    width: 10em;
     background-color: #ddE2A7;
     border: 0.125em solid #77CB62;
     box-shadow: 0.25em 0.25em 0.5em black;
@@ -91,9 +100,8 @@ button:hover {
 
 header {
     background-color: #A4D788;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    padding-left: 0.25em;
+    padding: 1%;
+    border-radius: 0.25em;
 }
 
 nav {
@@ -101,43 +109,36 @@ nav {
     padding: 0.75em;
 }
 
-main {
-    width: 41em;
-    background-color: #77CB62;
-    float: left;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding: 0.75em;
 
-}
 
 aside {
-    background-color: #77CB62;
-    width: 21em;
-    float: right;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    background: #B5E0A3;
+    padding: 0.5em;
+}
+
+article {
+    background: #B5E0A3;
     padding: 0.5em;
 }
 
 section {
-    background-color: #B5E0A3;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 1em;
-}
-
-article {
-    margin-top: 0.75em;
-    padding: 0.5em 1em;
+    background-color: #A4D788;
+    padding: 0.5em;
+    border-radius: 0.25em;
 }
 
 footer {
     background-color: #A4D788;
-    clear: both;
+    width: auto;
+    border-radius: 0.25em;
     text-align: center;
     padding-top: 0.0125em;
     padding-bottom: 0.0125em;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    right: 1%;
+    */
 }
 
 /* email submission form formatting */
@@ -163,6 +164,7 @@ input {
 }
 
 input[type=submit] {
+    width: 10em;
     background-color: #ddE2A7;
     border: 0.125em solid #77CB62;
     box-shadow: 0.25em 0.25em 0.5em black;
@@ -180,7 +182,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  border-color: #77CB62;
+    border-color: #77CB62;
     background-color: #77CB62;
     color: white;
 }
@@ -192,40 +194,58 @@ textarea {
 }
 
 label {
-  padding-bottom: 1%;
-  margin-top: 5%;
+    padding-bottom: 1%;
+    margin-top: 5%;
 }
 
 input,
 textarea {
-  text-align: left;
-  background: white;
+    text-align: left;
+    background: white;
 }
 
 textarea {
-  border: none;
+    border: none;
 }
 
 /* end form format area */
 
 /* class elements start here */
 
-.default_padding {
-    padding: 0;
-    margin: 0;
+/* Clearfix */
+.main:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
 }
 
-.default_border {
-    border-radius: 0.5em;
+.resume {
+    width: 60%;
+    border-radius: 0.25em;
+    position: absolute;
+    top: 16.5em;
+    left: 1%;
+}
+
+.desktop_bio {
+    width: 34%;
+    border-radius: 0.25em;
+    position: absolute;
+    top: 16.5em;
+    right: 1%;
+}
+
+.objectives_education {
+    width: 34%;
+    border-radius: 0.25em;
+    position: absolute;
+    top: 70em;
+    right: 1%;
 }
 
 .glory_shot_styling {
-    border-radius: 0.5em;
-    margin-bottom: 0.25em;
-}
-
-.education_list_Item_format {
-    font-family: 'Titillium Web', sans-serif;
+    border-radius: 0.25em;
 }
 
 .linkedin_list_item {
@@ -249,3 +269,80 @@ textarea {
 }
 
 /* id elements start here */
+
+/* end id elements */
+
+/* media dialog */
+
+/* 1440p and above */
+@media screen and (max-width: 180em) /* 2880px = 160em */  
+              and (min-width: 120em) { /* 1280px = 80em */
+  
+  /* Diagnostic Styling. */
+  body {
+       background: green;
+  }
+      .desktop, .tablet, .mobile, .wearable {
+          display: none;
+      }
+
+}
+
+
+/* Desktop */
+@media screen and (max-width: 120em) /* 2560px = 160em */
+              and (min-width: 64em) { /* 1280px = 80em */
+  
+  /* Diagnostic Styling. */
+        body {
+            background: green;
+        }
+      .fivek, .tablet, .mobile, .wearable {
+          display: none;
+      }
+
+}
+
+/* Tablet */
+@media screen and (max-width: 63.9375em) /* 1279 = 79.9375em */
+              and (min-width: 30em)  { /* 768px = 160em */
+
+  /* Diagnostic Styling. */
+  body {
+       background: green;
+  }
+      .fivek, .desktop, .mobile, .wearable {
+          display: none;
+      }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 29.9375em) /* 767px = 47.9375em */
+              and (min-width: 14em) { /* 320px = 20em */
+
+  /* Diagnostic Styling. */
+	body {
+       background: green;
+	}
+      
+      .fivek, .desktop, .tablet, .wearable, aside {
+          display: none;
+      }
+	
+}
+
+/* Wearable */
+@media screen and (max-width: 14em) /* 320px = 20em */
+              and (min-width: 1em) { /* 192px = 12em */
+                  
+        /* Diagnostic Styling */
+        body {
+            background: green;
+        }
+        
+        .fivek, .desktop, .tablet, .mobile, aside {
+            display: none;
+        }
+                  
+}
