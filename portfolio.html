@@ -2,40 +2,44 @@
 <html lang="en">
 <head>
 <meta charset "utf-8">
-    <title>My Portfoilo of Things</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<title>My Portfoilo of Things</title>
 </head>
 <body>
-    <main>
-        <header>
-           <h1>Portfolio of Prior Work</h1>
-        <nav>
-            <button onclick="location.href='index.html'" class="default_border">Home</button>
-            <button onclick="location.href='about.html'" class="default_border">About Me</button>
-            <button onclick="location.href='contact.html'" class="default_border">Contact Me</button>
+    <main class="main">
+       <h1>Portfolio of Prior Work</h1>
+        <header class="row">
+        <nav class="col">
+            <button onclick="location.href='index.html'" class="nav_btn">Home</button>
+            <button onclick="location.href='about.html'" class="nav_btn">About Me</button>
+            <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
         </nav>
         </header>
-        <article class="resume">
-            <h2>Old Web Sites</h2>
-            <p>I have some of my old web sites up at my <a href="http://www.pnwgamer.info/oldsites">hosted web space:</a></p>
-            <section>
-                    <h3>NorthWestGaming Organization (2005)</h3>
-                    <h3>Intranet Page for NWGO LAN Parties</h3>
-                    <h3>PacificNowthwestGamer (2002)</h3>
-                    <h3>VAQ-140 (2005)</h3>
-                    <p>This is one I was working on for the command I was stationed at. It was a work in progress, and never went live.</p>
-            </section>
-        </article>
-        <article class="desktop_bio">
-          <h2>Non Web Page Odds and Ends</h2>
-           <section>
-              <p>Samba Config file</p>
-              <p>Postfix config file</p>
-              <p>Iptables firewall</p>
-           </section>
-        </article>
-        <footer class="footer">
+        <div class="row">
+            <article class="col">
+                <h2>Old Web Sites</h2>
+                <p>I have some of my old web sites up at my <a href="http://www.pnwgamer.info/oldsites">hosted web space:</a></p>
+                <section>
+                        <h3>NorthWestGaming Organization (2005)</h3>
+                        <h3>Intranet Page for NWGO LAN Parties (2004)</h3>
+                        <h3>PacificNowthwestGamer (2002)</h3>
+                        <h3>VAQ-140 (2005)</h3>
+                        <p>This is one I was working on for the command I was stationed at. It was a work in progress, and never went live.</p>
+                </section>
+            </article>
+            <article class="col">
+              <h2>Non Web Page Odds and Ends</h2>
+                 <section>
+                 <p>These files are all very old (circa 2005 or older), and likely will not work for what I used them for when they were live.</p>
+                  <p><a href="/docs/smb.conf">Samba Config file</a> - not updated for use with newer samba 3+ distributions. Some of the options are likely not needed any more.</p>
+                   <p><a href="/docs/proftpd.conf">Proftpd config file</a> - linux FTP server daemon I used to use to host files locally on my Intranet</p>
+                   <p><a href="/docs/firewall.sh">Iptables firewall</a> - designed to allow the common services I used on my hosted linux server, and nothing else.</p>
+               </section>
+            </article>
+        </div>
+        <footer class="row footer">
             <p>Design and Content &copy; Mark Dietzler | 2016</p>
         </footer>
     </main>

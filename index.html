@@ -2,36 +2,40 @@
 <html lang="en">
 <head>
 <meta charset "utf-8">
-<title>Home Page of Mark Dietzler</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<title>Home Page of Mark Dietzler</title>
 </head>
-<body class="default_padding">
-    <main>
-        <header>
-            <h1>Casa del Dietzler</h1>
-        <nav>
-            <button onclick="location.href='about.html'" class="default_border">About Me</button>
-            <button onclick="location.href='portfolio.html'" class="default_border">My Portfolio</button>
-            <button onclick="location.href='contact.html'" class="default_border">Contact Me</button>
+<body>
+    <main class="main">
+       <h1>Casa del Dietzler</h1>
+        <header class="row">
+        <nav class="col">
+            <button onclick="location.href='about.html'" class="nav_btn">About Me</button>
+            <button onclick="location.href='portfolio.html'" class="nav_btn">My Portfolio</button>
+            <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
         </nav>
         </header>
-        <article class="resume">
-            <section class="default_border">
-
-                    <h2>Cool Stuff</h2>
-                <p>Text after text after text.</p>
-            </section>
-            &nbsp;
-            <section>
-                    <h3>More Cool Stuff</h3>
+           <div class="row">
+            <article class="col">
+                <section class="default_border">
+            
+                        <h2>Cool Stuff</h2>
                     <p>Text after text after text.</p>
-            </section>
-        </article>
-        <article class="desktop_bio">
-              <h2>Aside Text</h2>
-              <p>Text after text after text.</p>
-        </article>
-        <footer class="footer">
+                </section>
+                &nbsp;
+                <section>
+                        <h3>More Cool Stuff</h3>
+                        <p>Text after text after text.</p>
+                </section>
+            </article>
+            <article class="col">
+                  <h2>Aside Text</h2>
+                  <p>Text after text after text.</p>
+            </article>
+        </div>
+        <footer class="row footer">
             <p>Design and Content &copy; Mark Dietzler | 2016</p>
         </footer>
     </main>

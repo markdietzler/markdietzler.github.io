@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>About The One and Only Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>About The One and Only Me</title>
 </head>
 <body>
     <main>
-       <header>
-          <h1>Mark Dietzler</h1>
-           <nav>
-               <button onclick="location.href='index.html'" class="default_border">Home</button>
-               <button onclick="location.href='portfolio.html'" class="default_border">My Portfolio</button>
-               <button onclick="location.href='contact.html'" class="default_border">Contact Me</button>
+      <h1>Mark Dietzler</h1>
+         <header class="row"> 
+           <nav class="col">
+               <button onclick="location.href='index.html'" class="nav_btn">Home</button>
+               <button onclick="location.href='portfolio.html'" class="nav_btn">My Portfolio</button>
+               <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
            </nav>
        </header>
-        <article class="resume">
+       <div class="row">
+        <article class="col resume">
             <h2>Resume</h2>
             <section>
                 <p><strong>Skills</strong></p>
@@ -85,37 +87,37 @@
                 </ul>   
             </section>
         </article>
-        <article class="desktop_bio">
+        <article class="col desktop_bio">
+         <section>
           <img class="glory_shot_styling" src="img/dietz_dress_whites_wallet.png" alt="In my glory years...">
            <h3>Biography</h3>
-                <p>I grew up in Southern California, and after graduating high school, I did community college for about six quarters. That didn't work out, so I decided to try an automotive tech school in Phoenix, Arizona. That also did not work out, so I enlisted in the United States Navy, which I retired from in 2014. I was in logistics the entire time I was enlisted, working in storerooms doing heavy lifting, and as a consequence I am rated 40% disabled by the VA, so working in that field is no longer physically viable for me. Consequently, I am using the GI Bill to switch careers into what until now has been a hobby: Information Technology.</p>
-                <p>I have been building my own desktops since 1996, used nearly every desktop OS Microsoft has ever produced, have dabbled in linux and unix, can put together an adequate web page, and can hum a few bars when it comes to network topogrophy. I hope to learn in college all the underlying theory that I up until now haven't needed to know, and go out into the world and use my skills and experience to make the job of some poor box kicker in a warehouse somewhere in the world easier.</p> 
-        </article>
-        &nbsp;
-        <aside class="objectives_education">
+                <p>I grew up in Southern California, and after graduating high school, I attended community college for about six quarters. That didn't work out, so I decided to try an automotive tech school in Phoenix, Arizona. That <em>also</em> did not work out, so I enlisted in the United States Navy, which I retired from in 2014. I was in logistics the entire time I was enlisted, working in storerooms doing heavy lifting, and as a consequence I am rated 40% disabled by the VA, so working in that field is no longer physically viable for me. Consequently, I am using the GI Bill to switch careers into what until now has been a hobby: Information Technology.</p>
+                <p>I have been building my own desktops since 1996, used nearly every desktop OS Microsoft has ever produced, have dabbled in linux and unix, can put together an adequate web page, and can hum a few bars when it comes to network topogrophy. I hope to learn in college all the underlying theory that I up until now haven't needed to know, and go out into the world and use my skills and experience to make the job of some poor box kicker in a warehouse somewhere in the world easier.</p>
+           </section>
            <section>
            <h3>Objectives</h3>
            <p>After serving for 20 years in the Navy, I am seeking to use the knowledge and experience gained while serving to improve the productivity and efficiency of operations, wherever I may be.</p>    
            </section>
            <section>
-               <p><strong>Education</strong></p>
+               <h3>Education</h3>
                <ul>
                    <li class="education_list_Item_format">2019 Bachelors in Computer Science - Eastern Washington</li>
                    <li class="education_list_Item_format"> 2016 Associate of Arts - Olympic College</li>
                </ul>
            </section>
            <section>
-               <p><strong>Certifications</strong></p>
+               <h3>Certifications</h3>
                <ul>
-                  <li class="education_List_Item_format">Secret Clearance - inactive (exp. Nov 2017)</li>
-                   <li class="education_list_Item_format">Forklift Operator - Class 4</li>
-                   <li class="education_list_Item_format"><a href="http://www.dactces.org/index.php?option=com_content&view=article&id=200:ammo-62&catid=50&Itemid=76">AMMO 62 - Technical Transportation of Hazardous Materials</a></li>
-                   <li class="education_list_Item_format"><a href="http://www.dactces.org/index.php?option=com_content&view=article&id=139:ammo-51-mv-dl&catid=50&Itemid=76">AMMO 51 - Naval Motor Vehicle Inspection</a></li>
-                   <li class="education_list_Item_format">Ammunition Accountant</li>
+                  <li>Secret Clearance - inactive (exp. Nov 2017)</li>
+                  <li>Forklift Operator - Class 4</li>
+                  <li><a href="http://www.dactces.org/index.php?option=com_content&view=article&id=200:ammo-62&catid=50&Itemid=76">AMMO 62 - Technical Transportation of Hazardous Materials</a></li>
+                  <li><a href="http://www.dactces.org/index.php?option=com_content&view=article&id=139:ammo-51-mv-dl&catid=50&Itemid=76">AMMO 51 - Naval Motor Vehicle Inspection</a></li>
+                  <li>Ammunition Accountant</li>
                </ul>
            </section>
-        </aside>
-        <footer class="footer">
+           </article>
+        </div>
+        <footer class="row footer">
             <p>Design and Content &copy; Mark Dietzler | 2016</p>
         </footer>
     </main>
