@@ -27,12 +27,7 @@ main {
     width: 90%;
     background-color: #77CB62;
     margin: 0 auto;
-    margin-top: 01.5em;
-    margin-bottom: 0.5em;
     padding: 1%;
-    position: relative;
-    height: 163em ;
-
 }
 
 h1 {
@@ -71,74 +66,40 @@ li {
 }
 
 img {
-    width: 100%;
+    width: 75%;
 }
 
 button {
-    width: 12em;
-    background-color: #ddE2A7;
-    border: 0.125em solid #77CB62;
-    box-shadow: 0.25em 0.25em 0.5em black;
-    color: black;
-    padding: 0.0125em 2em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.25em;
-    font-family: 'Exo', sans-serif;
-    margin: .25em 0.125em;
-    -webkit-transition-duration: 0.3s; /* safari compatibility */
     transition-duration: 0.3s;
     cursor: pointer;
 }
 
-button:hover {
-    border-color: #77CB62;
-    background-color: #77CB62;
-    color: white;
-}
-
 header {
-    background-color: #A4D788;
-    padding: 1%;
     border-radius: 0.25em;
 }
 
 nav {
-    background-color: #A4D788;
-    padding: 0.75em;
+    border-radius: .5em;
+    padding: 1%;
 }
 
-
-
 aside {
-    background: #B5E0A3;
     padding: 0.5em;
 }
 
 article {
-    background: #B5E0A3;
-    padding: 0.5em;
+    padding: 1%;
 }
 
 section {
-    background-color: #A4D788;
-    padding: 0.5em;
+    background: #A4D788;
+    padding: 3%;
     border-radius: 0.25em;
+    margin: 1em;
 }
 
 footer {
-    background-color: #A4D788;
-    width: auto;
     border-radius: 0.25em;
-    text-align: center;
-    padding-top: 0.0125em;
-    padding-bottom: 0.0125em;
-    position: absolute;
-    bottom: 1%;
-    left: 1%;
-    right: 1%;
-    */
 }
 
 /* email submission form formatting */
@@ -158,25 +119,19 @@ textarea {
 
 label,
 input {
-  border-radius: 0.25em;
-  border: none;
+    border-radius: 0.25em;
+    border: none;
     font-family: 'Titillium Web', sans-serif;
+    text-align: center;
 }
 
 input[type=submit] {
-    width: 10em;
     background-color: #ddE2A7;
     border: 0.125em solid #77CB62;
-    box-shadow: 0.25em 0.25em 0.5em black;
-    color: black;
     padding: 0.0125em 2em;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 1.25em;
     font-family: 'Exo', sans-serif;
-    margin: .25em 0.125em;
-    -webkit-transition-duration: 0.3s; /* safari compatibility */
     transition-duration: 0.3s;
     cursor: pointer;
 }
@@ -188,14 +143,14 @@ input[type=submit]:hover {
 }
 
 textarea {
-    width: 40em;
-    height: 4em;
-    margin-bottom: 1.5em;
+    border-radius: 0.25em;
+    width: 50%;
+    margin-bottom: 2%;
 }
 
 label {
     padding-bottom: 1%;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 input,
@@ -220,31 +175,67 @@ textarea {
     visibility: hidden;
 }
 
+.row {
+    background: #A4D788;
+    border-radius: 0.5em;
+    margin: 1% 0;
+}
+
+.col {
+    background: #B5E0A3;
+    border-radius: 0.5em;
+    margin: 1%;
+    padding: 1%;
+}
+
+.nav_btn {
+    border-radius: 0.5em;
+    width: 12em;
+    background-color: #ddE2A7;
+    border: 0.125em solid #ddE2A7;
+    color: black;
+    padding: 0.0125em 2em;
+    font-size: 1.25em;
+    font-family: 'Exo', sans-serif;
+    margin: 0.25em 0.125em;
+}
+
+.nav_btn:hover {
+    border-color: #77CB62;
+    background-color: #77CB62;
+    color: white;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* Flexbox Styling */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex: 1 22.5em; 
+}
+/* end flex box styling */
+
 .resume {
     width: 60%;
-    border-radius: 0.25em;
-    position: absolute;
-    top: 16.5em;
-    left: 1%;
 }
 
 .desktop_bio {
-    width: 34%;
-    border-radius: 0.25em;
-    position: absolute;
-    top: 16.5em;
-    right: 1%;
+    padding: 1%;
 }
 
 .objectives_education {
-    width: 34%;
-    border-radius: 0.25em;
-    position: absolute;
-    top: 70em;
-    right: 1%;
+    padding: 1%;
 }
 
 .glory_shot_styling {
+    margin-left: 11%;
     border-radius: 0.25em;
 }
 
