@@ -8,15 +8,37 @@
 <title>About The One and Only Me</title>
 </head>
 <body>
-    <main>
-      <h1>Mark Dietzler</h1>
-         <header class="row"> 
-           <nav class="col">
-               <button onclick="location.href='index.html'" class="nav_btn">Home</button>
-               <button onclick="location.href='portfolio.html'" class="nav_btn">My Portfolio</button>
-               <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
-           </nav>
-       </header>
+    <main class="main">
+      <div class="spacer"></div>
+  <div id="mainNav">
+    <nav>
+      <ul>
+        <li class="large-nav"><button onclick="location.href='about.html'" class="nav_btn">About</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/contact.html">Contact</a></li> --->
+        <li class="large-nav"><button onclick="location.href='portfolio.html'" class="nav_btn">Portfolio</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li> --->
+        <li class="large-nav"><button onclick="location.href='contact.html'" class="nav_btn">Contact</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/about.html">About</a></li> --->
+        <li class="large-nav"><button onclick="location.href='index.html'" class="nav_btn">Home</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/index.html">Home</a></li> --->
+        <li id="markdietzler">Mark Dietzler</li>
+      </ul>
+      <!--- end desktop nav --->
+      <!--- start mobile nav --->
+      <div id="mobile_nav">
+        <label for="nav-input">☰</label>
+        <input name="nav-input" id="nav-input" type="checkbox" />
+        <ul>
+          <li><a href="https://markdietzler.github.io/index.html">Home</a></li>
+          <li><a href="https://markdietzler.github.io/about.html">About</a></li>
+          <li><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li>
+          <li><a href="https://markdietzler.github.io/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--- end mobile nav --->
+    
+    </nav>
+  </div> <!--- end nav menu --->
        <div class="row">
         <article class="col resume">
             <h2>Resume</h2>

@@ -9,33 +9,131 @@
 </head>
 <body>
     <main class="main">
-       <h1>Portfolio of Prior Work</h1>
-        <header class="row">
-        <nav class="col">
-            <button onclick="location.href='index.html'" class="nav_btn">Home</button>
-            <button onclick="location.href='about.html'" class="nav_btn">About Me</button>
-            <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
-        </nav>
-        </header>
+       <div class="spacer"></div>
+  <div id="mainNav">
+    <nav>
+      <ul>
+        <li class="large-nav"><button onclick="location.href='about.html'" class="nav_btn">About</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/contact.html">Contact</a></li> --->
+        <li class="large-nav"><button onclick="location.href='portfolio.html'" class="nav_btn">Portfolio</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li> --->
+        <li class="large-nav"><button onclick="location.href='contact.html'" class="nav_btn">Contact</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/about.html">About</a></li> --->
+        <li class="large-nav"><button onclick="location.href='index.html'" class="nav_btn">Home</button></li>
+        <!--- <li class="large-nav"><a href="https://markdietzler.github.io/index.html">Home</a></li> --->
+        <li id="markdietzler">Mark Dietzler</li>
+      </ul>
+      <!--- end desktop nav --->
+      <!--- start mobile nav --->
+      <div id="mobile_nav">
+        <label for="nav-input">☰</label>
+        <input name="nav-input" id="nav-input" type="checkbox" />
+        <ul>
+          <li><a href="https://markdietzler.github.io/index.html">Home</a></li>
+          <li><a href="https://markdietzler.github.io/about.html">About</a></li>
+          <li><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li>
+          <li><a href="https://markdietzler.github.io/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--- end mobile nav --->
+    
+    </nav>
+  </div> <!--- end nav menu --->
         <div class="row">
-            <article class="col">
-                <h2>Old Web Sites</h2>
-                <p>I have some of my old web sites up at my <a href="http://www.pnwgamer.info/oldsites">hosted web space:</a></p>
-                <section>
-                        <h3>NorthWestGaming Organization (2005)</h3>
-                        <h3>Intranet Page for NWGO LAN Parties (2004)</h3>
-                        <h3>PacificNowthwestGamer (2002)</h3>
-                        <h3>VAQ-140 (2005)</h3>
-                        <p>This is one I was working on for the command I was stationed at. It was a work in progress, and never went live.</p>
-                </section>
-            </article>
-            <article class="col">
-              <h2>Non Web Page Odds and Ends</h2>
-                 <section>
-                 <p>These files are all very old (circa 2005 or older), and likely will not work for what I used them for when they were live.</p>
-                  <p><a href="/docs/smb.conf">Samba Config file</a> - not updated for use with newer samba 3+ distributions. Some of the options are likely not needed any more.</p>
-                   <p><a href="/docs/proftpd.conf">Proftpd config file</a> - linux FTP server daemon I used to use to host files locally on my Intranet</p>
-                   <p><a href="/docs/firewall.sh">Iptables firewall</a> - designed to allow the common services I used on my hosted linux server, and nothing else.</p>
+           <article class="col">
+               <h2>Old Web Sites</h2>
+               <p>I have some of my old web sites up at my <a href="http://www.pnwgamer.info/oldsites">hosted web space:</a></p>
+               <section>
+                    <h3>NorthWestGaming Organization (2005)</h3>
+                    <h3>Intranet Page for NWGO LAN Parties (2004)</h3>
+                    <h3>PacificNowthwestGamer (2002)</h3>
+                    <h3>VAQ-140 (2005)</h3>
+                    <p>This is one I was working on for the command I was stationed at. It was a work in progress, and never went live.</p>
+               </section>
+           </article>
+           <article class="col odds_thumbs">
+               <section>
+                   <!--- thumbnail 1 --->
+                   <a href="#item-1"><img src="http://placehold.it/150x150" alt=""></a>
+                   <!--- thumbnail 2 --->
+                   <a href="#item-2"><img src="http://placehold.it/150x150" alt=""></a>
+                   <!--- thumbnail 3 --->
+                   <a href="#item-3"><img src="http://placehold.it/150x150" alt=""></a>
+                   <p>These files are all very old (circa 2005 or older), and likely will not work for what I used them for when they were live.</p>
+                   
+                   <!--- overlay 1 --->
+                   <div class="overlay" id="item-1">
+                      <section>
+                         <h3>Samba.conf</h3><br>
+                          [global]<br>
+                          workgroup = nwgo<br>
+                          netbios name = Influenza<br>
+                          server string = %L Samba Server %V<br>
+                          security = user<br>
+                          # domain logons = yes<br>
+                          encrypt passwords = yes<br>
+                          unix password sync = yes<br>
+                          passwd program = /usr/bin/passwd %u<br>
+                          socket options = TCP_NODELAY SO_RCVBUF=8192 SO_SNDBUF=8192<br>
+                          os level = 17<br>
+                          #preferred master = yes<br>
+                          #domain master = yes<br>
+                          #local master = yes<br>
+                          debug level = 1<br>
+                          logfile = /var/log/samba.log.%m<br>
+                          wins support = no<br>
+                          wins server = 192.168.0.2<br>
+                          name resolve order = wins lmhosts hosts bcast<br>
+                          <br>
+                          [homes]<br>
+                          comment = %L Home Directories<br>
+                          browseable = no<br>
+                          writable = yes<br>
+                          <br>
+                          [public]<br>
+                          comment = Put uploads HERE<br>
+                          volume = upload-directory<br>
+                          path = /home/public<br>
+                          guest account = smbuser<br>
+                          guest ok = yes<br>
+                          browseable = yes<br>
+                          writable = yes<br>
+                          create mask = 2777<br>
+                          <br>
+                          [Diesel]<br>
+                          comment = Diesel's home directory<br>
+                          volume = private<br>
+                          path = /home/Diesel<br>
+                          writeable = yes<br>
+                          valid users = Diesel<br>
+                          browseable = yes<br>
+                          create mask = 755<br>
+                          <br>
+                          #[netlogon]<br>
+                          #comment = The domain logon service<br>
+                          #path = /home/netlogon<br>
+                          #guest ok = no<br>
+                          #writeable = no<br>
+                          #browsable = no<br>
+                      </section>
+                      <a href="#">&#8855; Close</a>
+                   </div>
+                   
+                   <!--- overlay 2 --->
+                   <div class="overlay" id="item-2">
+                      <section>
+                          <p>Stuff for thumbnail 2 goes here</p>
+                      </section>
+                      <a href="#">&#8855; Close</a>
+                   </div>
+                   
+                   <!--- overlay 3 --->
+                   <div class="overlay" id="item-3">
+                      <section>
+                          <p>Stuff for thumbnail 3 goes here</p>
+                      </section>
+                      <a href="#">&#8855; Close</a>
+                   </div>
                </section>
             </article>
         </div>

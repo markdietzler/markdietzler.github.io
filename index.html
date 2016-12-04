@@ -8,36 +8,53 @@
 <title>Home Page of Mark Dietzler</title>
 </head>
 <body>
-    <main class="main">
-       <h1>Casa del Dietzler</h1>
-        <header class="row">
-        <nav class="col">
-            <button onclick="location.href='about.html'" class="nav_btn">About Me</button>
-            <button onclick="location.href='portfolio.html'" class="nav_btn">My Portfolio</button>
-            <button onclick="location.href='contact.html'" class="nav_btn">Contact Me</button>
-        </nav>
-        </header>
-           <div class="row">
-            <article class="col">
-                <section class="default_border">
-            
-                        <h2>Cool Stuff</h2>
-                    <p>Text after text after text.</p>
-                </section>
-                &nbsp;
-                <section>
-                        <h3>More Cool Stuff</h3>
-                        <p>Text after text after text.</p>
-                </section>
-            </article>
-            <article class="col">
-                  <h2>Aside Text</h2>
-                  <p>Text after text after text.</p>
-            </article>
-        </div>
-        <footer class="row footer">
-            <p>Design and Content &copy; Mark Dietzler | 2016</p>
-        </footer>
-    </main>
+<main class="main">
+    <div class="spacer"></div>
+    <div id="mainNav">
+       <nav>
+           <ul>
+             <!--- start desktop nav --->
+             <li class="large-nav"><button onclick="location.href='about.html'" class="nav_btn">About</button></li>
+             <li class="large-nav"><button onclick="location.href='portfolio.html'" class="nav_btn">Portfolio</button></li>
+             <li class="large-nav"><button onclick="location.href='contact.html'" class="nav_btn">Contact</button></li>
+             <li class="large-nav"><button onclick="location.href='index.html'" class="nav_btn">Home</button></li>
+             <li id="markdietzler">Mark Dietzler</li>
+           </ul>
+           <!--- end desktop nav --->
+           <!--- start mobile nav --->
+           <div id="mobile_nav">
+             <label for="nav-input">☰</label>
+             <input name="nav-input" id="nav-input" type="checkbox" />
+             <ul>
+               <li><a href="https://markdietzler.github.io/index.html">Home</a></li>
+               <li><a href="https://markdietzler.github.io/about.html">About</a></li>
+               <li><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li>
+               <li><a href="https://markdietzler.github.io/contact.html">Contact</a></li>
+             </ul>
+           </div>
+           <!--- end mobile nav --->
+       </nav>
+    </div> <!--- end nav menu --->
+    <div class="row">
+    <article class="col">
+      <section class="default_border">
+        <h2>Cool Stuff</h2>
+        <p>Text after text after text.</p>
+      </section>
+      &nbsp;
+      <section class="default_border">
+        <h3>More Cool Stuff</h3>
+        <p>Text after text after text.</p>
+      </section>
+    </article>
+    <article class="col">
+      <h2>Aside Text</h2>
+      <p>Text after text after text.</p>
+    </article>
+  </div>
+  <footer class="row footer">
+    <p>Design and Content &copy; Mark Dietzler | 2016</p>
+  </footer>
+</main>
 </body>
 </html>
