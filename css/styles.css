@@ -10,6 +10,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:800|Expletus+Sans:700|Poppins:500|Titillium+Web');
 
+/* global settings */
+* {
+  box-sizing: border-box;
+}
+
 /* pseudoclass link behavior */
 a {text-decoration: none}
 a:link {color: #A95322; text-decoration: none;}
@@ -18,16 +23,16 @@ a:hover {color: #BB5C26; text-decoration: underline overline;}
 a:active {color: #A95322; text-decoration: none;}
 
 /* element behavior */
-
 body {
-    background-color: green;
+  background: green;
 }
 
 main {
-    width: 90%;
-    background-color: #77CB62;
-    margin: 0 auto;
-    padding: 1%;
+  width: 90%;
+  max-width: 90%;
+  background: #77CB62;
+  margin: 0 auto;
+  padding: 0;
 }
 
 h1 {
@@ -49,44 +54,22 @@ p {
     font-family: 'Titillium Web', sans-serif;
 }
 
-ul {
-    margin: 1.3em;
-    padding: 0;
-}
-
-li {
-    font-family: 'Titillium Web', sans-serif;
-    list-style: none;
-    background: url(../img/iconmonstr-arrow-16px.png) no-repeat left center;
-    padding-left: 1.75em;
-    margin-top: 0.125em;
-    margin-bottom: 0.125em;
-    border-radius: 0.25em;
-    border: dashed 1px green;
+nav {
+  width: 90%;
+  height: 70px;
+  background-color: #77CB62;
+  position: fixed;
+  top: 0;
+  border-bottom: 0.1em solid green;
 }
 
 img {
     width: 75%;
 }
 
-button {
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-
-header {
-    border-radius: 0.25em;
-}
-
-nav {
-    border-radius: .5em;
-    padding: 1%;
-}
-
 aside {
     padding: 0.5em;
 }
-
 article {
     padding: 1%;
 }
@@ -98,74 +81,71 @@ section {
     margin: 1em;
 }
 
-footer {
-    border-radius: 0.25em;
-}
-
-/* email submission form formatting */
-form {
-    border-radius: 0.25em;
-}
-
-
-label,
-input,
-textarea {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-size: .9em;
-}
-
-label,
-input {
-    border-radius: 0.25em;
-    border: none;
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center;
-}
-
-input[type=submit] {
-    background-color: #ddE2A7;
-    border: 0.125em solid #77CB62;
-    padding: 0.0125em 2em;
-    text-align: center;
-    font-size: 1.25em;
-    font-family: 'Exo', sans-serif;
+button {
     transition-duration: 0.3s;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    border-color: #77CB62;
-    background-color: #77CB62;
-    color: white;
-}
-
-textarea {
+footer {
     border-radius: 0.25em;
-    width: 50%;
-    margin-bottom: 2%;
 }
 
-label {
-    padding-bottom: 1%;
-    margin-top: 1%;
+form {
+    border-radius: 0.25em;
 }
 
-input,
-textarea {
-    text-align: left;
-    background: white;
+article ul {
+    margin: 1.3em;
+    padding: 0;
 }
 
-textarea {
-    border: none;
+article li {
+    font-family: 'Titillium Web', sans-serif;
+    list-style: none;
+    background: url(../img/iconmonstr-arrow-16px.png) no-repeat left center;
+    padding-left: 1.75em;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    border-radius: 0.25em;
+    border: dashed 1px green;
 }
 
-/* end form format area */
+nav a {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 5% 19px 5%;
+  margin: 10%;
+  transition: color .2s;
+}
 
-/* class elements start here */
+nav a:hover {
+  color: #BB5C26;
+  text-decoration: underline overline;
+}
+
+nav a:active {
+  color: #A95322;
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  float: right;
+  padding-top: 20px;
+  padding-right: 2%;
+  display: inline-block;
+}
+
+/* class settings */
+.large-nav {
+  display: block;
+}
 
 /* Clearfix */
 .main:after {
@@ -175,42 +155,47 @@ textarea {
     visibility: hidden;
 }
 
-.row {
-    background: #A4D788;
-    border-radius: 0.5em;
-    margin: 1% 0;
-}
-
-.col {
-    background: #B5E0A3;
-    border-radius: 0.5em;
-    margin: 1%;
-    padding: 1%;
-}
-
 .nav_btn {
     border-radius: 0.5em;
-    width: 12em;
-    background-color: #ddE2A7;
-    border: 0.125em solid #ddE2A7;
+    width: 6em;
+    background-color: #B5E0A3;
+    border: 0.125em solid #B5E0A3;
     color: black;
-    padding: 0.0125em 2em;
-    font-size: 1.25em;
+    padding: 0.0125em;
     font-family: 'Exo', sans-serif;
     margin: 0.25em 0.125em;
 }
 
 .nav_btn:hover {
-    border-color: #77CB62;
-    background-color: #77CB62;
+    border-color: green;
+    background-color: green;
     color: white;
+}
+
+.spacer {
+  height: 4em;
+}
+
+/* styling only for row elements */
+.row {
+  background: #A4D788;
+  border-radius: 0.5em;
+  margin: 1% 0 ;
+}
+
+/* styling only for column elements */
+.col {
+  background: #B5E0A3;
+  border-radius: 0.5em;
+  margin: 1%;
+  padding: 1%;
 }
 
 .footer {
   text-align: center;
 }
 
-/* Flexbox Styling */
+/* flexbox styling for row and column elements */
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -218,9 +203,8 @@ textarea {
 }
 
 .col {
-  flex: 1 22.5em; 
-}
-/* end flex box styling */
+  flex: 1 427.5px;
+} /* end flexbox styling */
 
 .resume {
     width: 60%;
@@ -259,81 +243,253 @@ textarea {
     padding-left: 1.75em;
 }
 
-/* id elements start here */
+.odds_thumbs {
+    display: flex;
+    flex-flow: row-wrap;
+}
 
-/* end id elements */
+.odds_thumbs section {
+    flex: 1 0 5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
-/* media dialog */
+/* start email submission form formatting */
 
-/* 1440p and above */
-@media screen and (max-width: 180em) /* 2880px = 160em */  
-              and (min-width: 120em) { /* 1280px = 80em */
-  
-  /* Diagnostic Styling. */
-  body {
-       background: green;
-  }
-      .desktop, .tablet, .mobile, .wearable {
-          display: none;
-      }
+.form form,
+.form label,
+.form textarea {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9em;
+}
 
+.form label,
+.form input {
+    border-radius: 0.25em;
+    border: none;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.form textarea {
+    border-radius: 0.25em;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.form label {
+    padding-bottom: 1%;
+    margin-top: 1%;
+}
+
+.form input,
+.form textarea {
+    text-align: left;
+    background: white;
+}
+
+.form textarea {
+    border: none;
+}
+
+input[type=submit] {
+    background-color: #ddE2A7;
+    border: 0.125em solid #77CB62;
+    padding: 0.0125em 2em;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: 'Exo', sans-serif;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-color: #77CB62;
+    background-color: #77CB62;
+    color: white;
+} /* end of email form formatting */
+
+/* start gallery items */
+
+.overlay {
+    display: none;
+    /* overlay styling */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 128 , 0, .75);
+}
+
+/* show */
+.overlay:target {
+    /*display: block;*/
+    /* flexbox vert and horiz centering */
+    display: flex;
+    min-height: 50vh; /* vh = viewport height */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay a {
+    font-size: 1em;
+    background: #77CB62;
+    border-radius: 0.25em;
+    color: black;
+    padding: 0.35em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.overlay a:hover {
+    color: green;
+    background: #B5E0A3;
+}
+
+.overlay section {
+    width: 20%;
+    font-size: 0.75em;
+}
+
+/* id settings */
+
+#mobile_nav {
+  display: none;
+}
+
+li#markdietzler {
+  font-size: 3em;
+  float: left;
+  font-family: 'Expletus Sans', sans-serif;
+  padding: 0.5rem 0 1.25rem 1.25rem;
+  text-transform: uppercase;
+}
+
+#nav-input {
+  display: none;
+}
+
+#mobile_nav a {
+  width: 100%;
+  display: inline-block;
+  font-size: .7em;
+  font-family: 'Exo', sans-serif;
+  padding: 2em 2em 2em 2em;
+  margin: 0;
+  transition: 0.4s;
+}
+
+#mobile_nav a:hover {
+  text-decoration: none;
+  background: #77CB62;
+  border-radius: 0.5em;
+  width: 98%;
+  color: #fff;
+}
+
+#mobile_nav label {
+  color: #000;
+  float: right;
+  margin: 0.4em .8em 0 0;
+  font-size: 2em;
+}
+
+#mobile_nav li {
+  background: #ddE2A7;
+  width: 100%;
+  text-align: center;
+  padding: .3em 0 0 0;
+}
+
+label[for="nav-input"] {
+  cursor: pointer;
+  display: inline-block;
+}
+
+#nav-input + ul {
+  display: none;
+}
+
+#nav-input:checked + ul {
+  position: absolute;
+  top: 4.45em;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 9;
+}
+
+/* start media queries */
+
+/* 1080p and up*/
+@media screen and (max-width: 2880px)
+    and (min-width: 1921px) {
+        /* increase size of nav buttons */
 }
 
 
-/* Desktop */
-@media screen and (max-width: 120em) /* 2560px = 160em */
-              and (min-width: 64em) { /* 1280px = 80em */
-  
-  /* Diagnostic Styling. */
-        body {
-            background: green;
-        }
-      .fivek, .tablet, .mobile, .wearable {
-          display: none;
-      }
-
+/* tablet to 1080p */
+@media screen and (max-width: 1920px)
+    and (min-width: 1007px) {
+        /* increase size of nav buttons */
 }
 
-/* Tablet */
-@media screen and (max-width: 63.9375em) /* 1279 = 79.9375em */
-              and (min-width: 30em)  { /* 768px = 160em */
-
-  /* Diagnostic Styling. */
-  body {
-       background: green;
-  }
-      .fivek, .desktop, .mobile, .wearable {
-          display: none;
-      }
-
+/* start tablet */
+@media screen and (max-width: 1006px)
+  and (min-width: 480px) {
+    
+    /* turn on mobile display */
+    #mobile_nav {
+      display: block;
+    }
+    /* turn off desktop nav */
+    .large-nav {
+      display: none;
+    }
+    
+    /*  */
+    li#markdietzler {
+      font-size: 2em;
+      line-height: 60px;
+    }
+    
 }
 
-/* Mobile */
-@media screen and (max-width: 29.9375em) /* 767px = 47.9375em */
-              and (min-width: 14em) { /* 320px = 20em */
-
-  /* Diagnostic Styling. */
-	body {
-       background: green;
-	}
-      
-      .fivek, .desktop, .tablet, .wearable, aside {
-          display: none;
-      }
-	
-}
-
-/* Wearable */
-@media screen and (max-width: 14em) /* 320px = 20em */
-              and (min-width: 1em) { /* 192px = 12em */
-                  
-        /* Diagnostic Styling */
-        body {
-            background: green;
-        }
-        
-        .fivek, .desktop, .tablet, .mobile, aside {
-            display: none;
-        }
-                  
+/* mobile */
+@media screen and (max-width: 479px)
+  and (min-width: 320px) {
+    
+    /* keep the mobile nav on */
+    #mobile_nav {
+      display: block;
+    }
+    /* keep desktop nav turned off */
+    .large-nav {
+      display: none;
+    }
+    
+    /*  */
+    li#markdietzler {
+      font-size: 1.52em;
+      line-height: 60px;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    h3 {
+      font-size: 1em;
+    }
+    
+    p {
+      font-size: 0.75em;
+    }
+    
 }
