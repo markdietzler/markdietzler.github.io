@@ -40,7 +40,7 @@
     </nav>
   </div> <!--- end nav menu --->
         <div class="row">
-           <article class="col">
+           <article class="col odds_thumbs">
                <h2>Old Web Sites</h2>
                <p>I have some of my old web sites up at my <a href="http://www.pnwgamer.info/oldsites">hosted web space:</a></p>
                <section>
@@ -52,88 +52,21 @@
                </section>
            </article>
            <article class="col odds_thumbs">
+              <h2>Linux Config Files</h2>
                <section>
-                   <!--- thumbnail 1 --->
-                   <a href="#item-1"><img src="http://placehold.it/150x150" alt=""></a>
-                   <!--- thumbnail 2 --->
-                   <a href="#item-2"><img src="http://placehold.it/150x150" alt=""></a>
-                   <!--- thumbnail 3 --->
-                   <a href="#item-3"><img src="http://placehold.it/150x150" alt=""></a>
-                   <p>These files are all very old (circa 2005 or older), and likely will not work for what I used them for when they were live.</p>
                    
-                   <!--- overlay 1 --->
-                   <div class="overlay" id="item-1">
-                      <section>
-                         <h3>Samba.conf</h3><br>
-                          [global]<br>
-                          workgroup = nwgo<br>
-                          netbios name = Influenza<br>
-                          server string = %L Samba Server %V<br>
-                          security = user<br>
-                          # domain logons = yes<br>
-                          encrypt passwords = yes<br>
-                          unix password sync = yes<br>
-                          passwd program = /usr/bin/passwd %u<br>
-                          socket options = TCP_NODELAY SO_RCVBUF=8192 SO_SNDBUF=8192<br>
-                          os level = 17<br>
-                          #preferred master = yes<br>
-                          #domain master = yes<br>
-                          #local master = yes<br>
-                          debug level = 1<br>
-                          logfile = /var/log/samba.log.%m<br>
-                          wins support = no<br>
-                          wins server = 192.168.0.2<br>
-                          name resolve order = wins lmhosts hosts bcast<br>
-                          <br>
-                          [homes]<br>
-                          comment = %L Home Directories<br>
-                          browseable = no<br>
-                          writable = yes<br>
-                          <br>
-                          [public]<br>
-                          comment = Put uploads HERE<br>
-                          volume = upload-directory<br>
-                          path = /home/public<br>
-                          guest account = smbuser<br>
-                          guest ok = yes<br>
-                          browseable = yes<br>
-                          writable = yes<br>
-                          create mask = 2777<br>
-                          <br>
-                          [Diesel]<br>
-                          comment = Diesel's home directory<br>
-                          volume = private<br>
-                          path = /home/Diesel<br>
-                          writeable = yes<br>
-                          valid users = Diesel<br>
-                          browseable = yes<br>
-                          create mask = 755<br>
-                          <br>
-                          #[netlogon]<br>
-                          #comment = The domain logon service<br>
-                          #path = /home/netlogon<br>
-                          #guest ok = no<br>
-                          #writeable = no<br>
-                          #browsable = no<br>
-                      </section>
-                      <a href="#">&#8855; Close</a>
-                   </div>
+                       <!--- thumbnail 1 --->
+                       <a href="/docs/smb.conf"><img src="/img/txt-file-icon.png" alt="Samba config"></a>
                    
-                   <!--- overlay 2 --->
-                   <div class="overlay" id="item-2">
-                      <section>
-                          <p>Stuff for thumbnail 2 goes here</p>
-                      </section>
-                      <a href="#">&#8855; Close</a>
-                   </div>
                    
-                   <!--- overlay 3 --->
-                   <div class="overlay" id="item-3">
-                      <section>
-                          <p>Stuff for thumbnail 3 goes here</p>
-                      </section>
-                      <a href="#">&#8855; Close</a>
-                   </div>
+                       <!--- thumbnail 2 --->
+                       <a href="/docs/proftpd.conf"><img src="/img/txt-file-icon.png" alt="Proftpd config"></a>
+                   
+                   
+                       <!--- thumbnail 3 --->
+                       <a href="/docs/firewall.sh"><img src="/img/txt-file-icon.png" alt="Iptables firewall"></a>
+                   
+                   <p>These config files are all very old (circa 2005 or older), and likely will not work for current versions of the daemon.</p>
                </section>
             </article>
         </div>
