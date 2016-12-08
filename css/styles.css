@@ -449,8 +449,18 @@ label[for="nav-input"] {
 }
 
 /* mobile */
-@media screen and (max-width: 479px)
-  and (min-width: 320px) {
+@media screen and (max-width: 479px) {
+  
+  main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 20em;
+  }
+  
+  nav {
+    width: 100%;
+    min-width: 20em;
+  }
     
     /* keep the mobile nav on */
     #mobile_nav {
