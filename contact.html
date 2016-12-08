@@ -37,15 +37,15 @@
         <article class="col">
             <section class="form">
                 <h2>Send Me A Message</h2>
-                <form action="http://formspree.io/pray1andspray@yahoo.com" method="POST">
+                <form action="https://formspree.io/pray1andspray@yahoo.com" method="post">
                     <label for="name">Name*</label>
-                    <input name="name" type="input">
-                    <label for="_replyto">Email*</label>
-                    <input name="_replyto" type="input">
-                    <label for="message">Message*</label>
+                    <input type="input" name="name"/>
+                    <label for="email">E-Mail</label>
+                    <input type="input" name="email"/>
+                    <label for="message">Message</label>
                     <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <input value="Send it!" type="submit">
-                    <!-- ***Hidden Field*** -->
+                    <input type="submit" value="Send It!">
+                    <!-- ***hidden area for form*** -->
                     <input name="_next" value="http://markdietzler.github.io/thanks.html" type="hidden">
                 </form>
                 </section>
