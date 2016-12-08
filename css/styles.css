@@ -299,6 +299,10 @@ nav li {
     margin-top: 1%;
 }
 
+.form input {
+  width: 40%;
+}
+
 .form input,
 .form textarea {
     text-align: left;
@@ -311,7 +315,7 @@ nav li {
 
 input[type=submit] {
     background-color: #ddE2A7;
-    border: 0.125em solid #77CB62;
+    border: 0.125em solid #ddE2A7;
     padding: 0.0125em 2em;
     text-align: center;
     font-size: 1.25em;
@@ -324,7 +328,13 @@ input[type=submit]:hover {
     border-color: #77CB62;
     background-color: #77CB62;
     color: white;
-} /* end of email form formatting */
+}
+
+.form input#submit_btn {
+  width: 20%;
+}
+
+/* end of email form formatting */
 
 /* id settings */
 
