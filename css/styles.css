@@ -107,7 +107,7 @@ article li {
     margin-top: 0.125em;
     margin-bottom: 0.125em;
     border-radius: 0.25em;
-    border: dashed 1px green;
+    /*border: dashed 1px green;*/
 }
 
 nav a {
